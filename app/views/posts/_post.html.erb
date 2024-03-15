@@ -1,0 +1,11 @@
+<div>
+  <div>
+    作成者：<%= post.user.nickname %>
+  </div>
+  <div>
+    <%= link_to post.address, post_path(post.id) %>:
+  </div>
+  <div>
+    コメント：<%= post.comment %>
+  </div><br />
+</div>
