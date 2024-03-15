@@ -1,0 +1,15 @@
+/* 投稿詳細画面 */
+.item-box-img{
+  width: 100vw;
+  height: 400px;
+}
+
+.item-img{
+  width: 250px;
+  height: auto;
+}
+
+img{
+  width: 250px;
+  height: auto;
+}
