@@ -78,3 +78,5 @@ end
 
 gem 'devise'
 gem 'geocoder'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
