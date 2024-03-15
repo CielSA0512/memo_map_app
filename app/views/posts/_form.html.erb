@@ -1,0 +1,9 @@
+<%= form_with model: @post, id:'new_post', local: true do |f| %>
+  <div class="form-group">
+    <%= f.label :address, 'スポット名' %><br>
+    <%= f.text_field :address, placeholder: "(例)東京スカイツリー", autofocus: true, class: "form-control", autocomplete: "off" %><br>
+    <%= f.label :comment, "コメント" %><br>
+    <%= f.text_area :comment, placeholder: "(例)卒業旅行のとき" %><br>
+  </div>
+    <%= f.submit '投稿する' %> 
+<% end %>
