@@ -1,17 +1,23 @@
 class Post < ApplicationRecord
   belongs_to :user
   has_one_attached :image
-  validates :address, presence: true
-  validates :text, presence: true, unless: :was_attached?
+  
+  with_options presence: true do
+    validates :address
+    validates :comment
+  end
 
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
 
-  def full_address
-    [prefecture, address].compact.join('')
-  end
+  validate :address_must_be_geocodable
 
-  def was_attached?
-    image.attached?
+  private
+
+  def address_must_be_geocodable
+    geocode
+    if address.present? && !geocoded?
+      errors.add(:address, "could not be geocoded")
+    end
   end
 end

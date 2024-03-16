@@ -1,4 +1,4 @@
-document.addEventListener('turbo:load', function(){
+function preview (){
   const postForm = document.getElementById('new_post');
   const previewList = document.getElementById('previews')
   if (!postForm) return null;
@@ -23,4 +23,7 @@ document.addEventListener('turbo:load', function(){
     previewWrapper.appendChild(previewImage);
     previewList.appendChild(previewWrapper);
   });
-});
+};
+
+window.addEventListener('turbo:load', preview);
+window.addEventListener('turbo:render', preview);
