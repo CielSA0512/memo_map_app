@@ -1,7 +1,7 @@
 <div class="main">
 
   <div>
-    <div>作成したユーザー：<%= link_to @post.user.nickname, "#" %></div><br>
+    <div>作成したユーザー：<%= link_to @post.user.nickname, user_path(@user.id) %></div><br>
     <div>お気に入りスポット：<%= @post.address %></div><br>
     <div>コメント：<%= @post.comment %></div><br>
     <% if @post.image.present? %>
