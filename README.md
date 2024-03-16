@@ -60,10 +60,18 @@ https://memo-map-app.onrender.com/
 
 ・テキストエディタ
 
-・タスク管理
+・Geocoding API
+
+・Maps JavaScript API
 
 ## ローカルでの動作方法
 ＜記入予定＞
 
 ## 工夫したポイント
 ＜記入予定＞
+
+## 改善点
+＜記入予定＞
+
+## 製作時間
+一週間程度
