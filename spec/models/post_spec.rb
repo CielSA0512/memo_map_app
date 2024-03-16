@@ -17,24 +17,24 @@ RSpec.describe Post, type: :model do
     end
     context 'スポット投稿ができない' do
       it 'addressが空では保存できない' do
-        @post.address = ""
+        @post.address = ''
         @post.valid?
         expect(@post.errors.full_messages).to include("Address can't be blank")
       end
       it 'addressを入力しても緯度と経度が算出できなければ保存できない' do
-        @post.address = "と"
+        @post.address = 'と'
         @post.valid?
-        expect(@post.errors.full_messages).to include("Address could not be geocoded")
+        expect(@post.errors.full_messages).to include('Address could not be geocoded')
       end
       it 'commentが空では保存できない' do
-        @post.comment = ""
+        @post.comment = ''
         @post.valid?
         expect(@post.errors.full_messages).to include("Comment can't be blank")
       end
       it 'userが紐づいていないと保存できない' do
         @post.user = nil
         @post.valid?
-        expect(@post.errors.full_messages).to include("User must exist")
+        expect(@post.errors.full_messages).to include('User must exist')
       end
     end
   end

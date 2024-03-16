@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :post do
-    address {"東京スカイツリー"}
-    comment {Faker::Lorem.sentence}
+    address { '東京スカイツリー' }
+    comment { Faker::Lorem.sentence }
     association :user
 
     after(:build) do |post|

@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   belongs_to :user
   has_one_attached :image
-  
+
   with_options presence: true do
     validates :address
     validates :comment
@@ -16,8 +16,8 @@ class Post < ApplicationRecord
 
   def address_must_be_geocodable
     geocode
-    if address.present? && !geocoded?
-      errors.add(:address, "could not be geocoded")
-    end
+    return unless address.present? && !geocoded?
+
+    errors.add(:address, 'could not be geocoded')
   end
 end
