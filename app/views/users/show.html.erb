@@ -15,7 +15,7 @@
         <td class=""><%= @user.hobby %></td>
       </tr>
     </table>
-    <% if current_user.id == @user.id %>
+    <% if user_signed_in? && current_user.id == @user.id %>
       <div>
         <%= link_to "アカウント編集", edit_user_path(@user.id) %>
       </div>
