@@ -1,0 +1,30 @@
+<div class="main">
+  <h2><%= @user.nickname %></h2>
+  <div>
+    <table>
+      <tr>
+        <th class="">名前：</th>
+        <td class=""><%= @user.nickname %></td>
+      </tr>
+      <tr>
+        <th class="">プロフィール：</th>
+        <td class=""><%= @user.profile %></td>
+      </tr>
+      <tr>
+        <th class="">趣味：</th>
+        <td class=""><%= @user.hobby %></td>
+      </tr>
+    </table>
+    <% if current_user.id == @user.id %>
+      <div>
+        <%= link_to "アカウント編集", edit_user_path(@user.id) %>
+      </div>
+    <% end %>
+  </div>
+  <h2><%= @user.nickname %>さんのお気に入りスポット一覧</h2>
+  <div>
+    <% @posts.each do |post| %>
+      <%= render partial: "posts/post", locals: { post: post } %>
+    <% end %>
+  </div>
+</div>
