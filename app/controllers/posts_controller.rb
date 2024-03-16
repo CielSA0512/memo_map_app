@@ -54,6 +54,6 @@ class PostsController < ApplicationController
   def move_to_index
     return if current_user.id == @post.user_id
 
-    redirect_to :index
+    redirect_to root_path
   end
 end

@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:edit, :show]
-  before_action :move_to_show, only: :edit
+  before_action :authenticate_user!, except: :show
+  before_action :move_to_index, only: :edit
 
   def edit
   end
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:nickname, :email, :profile, :hobby)
   end
 
-  def move_to_show
+  def move_to_index
     return if current_user.id == @user.id
 
     redirect_to root_path
