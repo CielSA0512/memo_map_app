@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to root_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
     if post.update(post_params)
       redirect_to post_path(post.id)
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
