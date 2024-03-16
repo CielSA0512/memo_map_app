@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
   end
-  
+
   def new
     @post = Post.new
   end
@@ -42,6 +42,7 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
     params.require(:post).permit(:address, :latitude, :longitude, :comment, :image).merge(user_id: current_user.id)
   end
