@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_post, only: [:edit, :show, :destroy]
+  before_action :set_post, only: [:edit, :update, :show, :destroy]
   before_action :move_to_index, only: [:edit, :destroy]
 
   def index
@@ -24,9 +24,8 @@ class PostsController < ApplicationController
   end
 
   def update
-    post = Post.find(params[:id])
-    if post.update(post_params)
-      redirect_to post_path(post.id)
+    if @post.update(post_params)
+      redirect_to post_path(@post.id)
     else
       render :edit, status: :unprocessable_entity
     end
