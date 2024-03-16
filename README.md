@@ -9,8 +9,11 @@ https://memo-map-app.onrender.com/
 
 ## テスト用アカウント
 ・Basic認証パスワード：ccrow
+
 ・Basic認証ID：1221
+
 ・メールアドレス：ccrow@gmail.com
+
 ・パスワード：kira0512
 
 ## 利用方法
@@ -35,21 +38,28 @@ https://memo-map-app.onrender.com/
 
 ## 実装予定の機能
 ・スポット検索機能
+
 ・スポットいいね登録機能
+
 ・いいねの数を参照したスポットランキング機能
 
 ## データベース設計
-\\wsl.localhost\Ubuntu\home\ktf518\projects\memo_map_app\map_memo_app.drawio.png
+[![Image from Gyazo](https://i.gyazo.com/03331975ab8fba4093371858d320eb9e.png)](https://gyazo.com/03331975ab8fba4093371858d320eb9e)
 
 ## 画面遷移図
 ＜記入予定＞
 
 ## 開発環境
 ・フロントエンド
+
 ・バックエンド
+
 ・インフラ
+
 ・テスト
+
 ・テキストエディタ
+
 ・タスク管理
 
 ## ローカルでの動作方法
