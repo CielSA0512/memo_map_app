@@ -4,7 +4,7 @@
 }
 
 .btn{
-  /* text-decoration: none; */
+  text-decoration: none;
   color: black;
 }
 
@@ -15,19 +15,45 @@
 /* メイン */
 
 .main{
-  height: 100vh;
-  width: 100vw;
+  height: calc(100vh - 100px);
+  width: 100%;
   background-color: azure;
-
 }
 
-.album-box{
-  width: 20%;
-  height: 100px;
+.container{
+  height: 100%;
+  padding: 20px;
+  margin: 0 40px;
 }
 
-.link{
-  margin: 5px;
+/* お気に入りスポットを記録しよう！ */
+.main-container{
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.top-container{
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+/* みんなのお気に入りスポット一覧 */
+.center-container{
+  padding: 16px;
+  text-align: center;
+}
+
+.center-posts{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center-post{
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 10px;
 }
 
 /* 投稿詳細画面 */
