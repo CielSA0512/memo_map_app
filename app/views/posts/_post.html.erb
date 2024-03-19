@@ -1,11 +1,11 @@
-<div>
-  <div>
+<div class="album-box">
+  <div class="">
     作成者：<%= post.user.nickname %>
   </div>
-  <div>
-    <%= link_to post.address, post_path(post.id) %>:
+  <div class="link">
+    <%= link_to post.address, post_path(post.id), class:"btn" %>:
   </div>
-  <div>
+  <div class="">
     コメント：<%= post.comment %>
   </div><br />
 </div>

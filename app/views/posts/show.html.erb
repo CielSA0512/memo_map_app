@@ -1,25 +1,22 @@
-<div class="main">
-
-  <div>
-    <div>作成したユーザー：<%= link_to @post.user.nickname, user_path(@user.id) %></div><br>
-    <div>お気に入りスポット：<%= @post.address %></div><br>
-    <div>コメント：<%= @post.comment %></div><br>
-    <% if @post.image.present? %>
-      <div>思い出写真：</div>
-      <div class="item-box-img">
-        <%= image_tag @post.image, class: "item-img" %>
-      </div>
-    <% end %>
+<div>
+  <div>作成したユーザー：<%= link_to @post.user.nickname, user_path(@user.id), class:"btn" %></div><br>
+  <div>お気に入りスポット：<%= @post.address %></div><br>
+  <div>コメント：<%= @post.comment %></div><br>
+  <% if @post.image.present? %>
+    <div>思い出写真：</div>
+    <div class="item-box-img">
+      <%= image_tag @post.image, class: "item-img" %>
+    </div>
+  <% end %>
   </div>
 
-    <div>思い出の場所：</div>
-    <%= render partial: "map", locals: { post: @post }  %>
-  
+  <div>思い出の場所：</div>
+  <%= render partial: "map", locals: { post: @post }  %>
+
   <div>
-    <% if user_signed_in? && current_user.id == @post.user_id %>
-      <%= link_to "編集", edit_post_path(@post.id) %>/
-      <%= link_to "削除", post_path(@post.id), data:{ turbo_method: :delete } %>
-    <% end %>
-  </div>
-  
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <%= link_to "編集", edit_post_path(@post.id), class:"btn" %>/
+    <%= link_to "削除", post_path(@post.id), data:{ turbo_method: :delete }, class:"btn" %>
+  <% end %>
 </div>
+  

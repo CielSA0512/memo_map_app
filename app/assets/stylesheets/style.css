@@ -1,0 +1,47 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+.btn{
+  /* text-decoration: none; */
+  color: black;
+}
+
+.hidden{
+  display: none;
+}
+
+/* メイン */
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  background-color: azure;
+
+}
+
+.album-box{
+  width: 20%;
+  height: 100px;
+}
+
+.link{
+  margin: 5px;
+}
+
+/* 投稿詳細画面 */
+.item-box-img{
+  width: 100vw;
+  height: 400px;
+}
+
+.item-img{
+  width: 250px;
+  height: auto;
+}
+
+img{
+  width: 250px;
+  height: auto;
+}
