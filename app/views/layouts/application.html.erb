@@ -22,12 +22,12 @@
               <% if user_signed_in? %>
                 <div class="user-menu">
                   <div class="user_name" id= "login_user">  
-                    <%= current_user.nickname%>▼
+                    <%= current_user.nickname %>▼
                   </div>
                 </div>
               <% else %>
                 <div class="user-menu">
-                  <%= link_to "ログイン", new_user_session_path, class:"nav_login btn" %> /
+                  <%= link_to "ログイン", new_user_session_path, class:"nav_login btn" %>
                   <%= link_to "新規登録", new_user_registration_path, class:"nav_signup btn" %>
                 </div>
               <% end %>

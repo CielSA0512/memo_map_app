@@ -19,25 +19,23 @@
 
 .header-sub-menu{
   background-color: beige;
-  width: 150px;
+  width: 200px;
   height: 50px;
   text-align: center;
   position: relative;
 }
 
 .user-menu{
-
 }
 
 .user_name{
-
 }
 
 .user_menu_btn{
   position: absolute;
   top: 50px;
   right: 0;
-  width: 150px;
+  width: 200px;
   margin-right: 20px;
   background-color: white;
   text-align: center;
