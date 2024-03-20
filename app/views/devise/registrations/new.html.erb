@@ -1,53 +1,56 @@
 <div class="main">
   <div class="container">
-    <h2>新規登録画面</h2>
+    <div class="new-container">
+       <div class="new-form-container">
+        <div class="new-form-title">新規登録画面</div>
 
-    <%= form_with model:@user, url: user_registration_path, local: true do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
+        <%= form_with model:@user, url: user_registration_path, local: true do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
 
-      <div class="field">
-        <%= f.label :nickname, "ニックネーム" %>
-        <span>必須</span><br />
-        <%= f.text_area :nickname, autofocus: true %>
-      </div>
+          <div class="field">
+            <%= f.label :nickname, "ニックネーム", class:"spot-comment" %>
+            <span style="color: red;">必須</span><br />
+            <%= f.text_area :nickname, autofocus: true, class: "form-address" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :email, "メールアドレス" %>
-        <span>必須</span><br />
-        <%= f.email_field :email, autocomplete: "email" %>
-      </div>
+          <div class="field">
+            <%= f.label :email, "メールアドレス", class:"spot-comment" %>
+            <span style="color: red;">必須</span><br />
+            <%= f.email_field :email, autocomplete: "email", class: "form-address" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :profile, "プロフィール" %><br />
-        <%= f.text_area :profile %>
-      </div>
+          <div class="field">
+            <%= f.label :profile, "プロフィール", class:"spot-comment" %><br />
+            <%= f.text_area :profile, class:"form-comment" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :hobby, "趣味" %><br />
-        <%= f.text_area :hobby %>
-      </div>
+          <div class="field">
+            <%= f.label :hobby, "趣味", class:"spot-comment" %><br />
+            <%= f.text_area :hobby, class:"form-comment" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <div class="field">
+            <%= f.label :password, "パスワード", class:"spot-comment" %>
+            <% if @minimum_password_length %>
+            <em class="spot-comment">(<%= @minimum_password_length %>文字以上)</em>
+            <% end %>
+            <span style="color: red;">必須</span><br />
+            <%= f.password_field :password, autocomplete: "new-password", class: "form-address"  %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password_confirmation, "パスワード再入力", class:"spot-comment" %>
+            <span style="color: red;">必須</span><br />
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-address"  %>
+          </div><br />
+
+          <div class="submit-btn">
+            <%= f.submit "新規登録", class:"new_spot_btn" %>
+          </div><br />
         <% end %>
-        <span>必須</span><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+
+        <%= render "devise/shared/links" %>
       </div>
-
-      <div class="field">
-        <%= f.label :password_confirmation %>
-        <span>必須</span><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-      </div><br />
-
-      <div class="actions">
-        <%= f.submit "Sign up" %>
-      </div><br />
-    <% end %>
-
-    <%= render "devise/shared/links" %>
-
+    </div>
   </div>
 </div>

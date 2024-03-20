@@ -13,6 +13,10 @@
   display: none;
 }
 
+ul{
+  list-style: none;
+}
+
 /* メイン */
 
 .main{
@@ -87,9 +91,8 @@
   font-size: 20px;
 }
 
-.user{
+.nickname_btn{
   background-color: floralwhite;
-  border: 1px solid grey;
   padding: 5px 0;
 }
 

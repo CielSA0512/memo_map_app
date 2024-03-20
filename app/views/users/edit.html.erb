@@ -1,31 +1,35 @@
 <div class="main">
   <div clasS="container">
-    <h2>アカウント編集画面</h2>
+    <div class="new-container">
+      <div class="new-form-container">
+        <div class="new-form-title">アカウント編集画面</div>
 
-    <%= form_with model:@user, local: true do |f| %>
-      <div class="field">
-        <%= f.label :nickname, "ニックネーム" %><br />
-        <%= f.text_area :nickname, autofocus: true, placeholder: "(例)たなか" %>
-      </div>
+        <%= form_with model:@user, local: true do |f| %>
+          <div class="field">
+            <%= f.label :nickname, "ニックネーム", class:"spot-comment" %><br />
+            <%= f.text_area :nickname, autofocus: true, placeholder: "(例)たなか", class: "form-address" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :email, "メールアドレス" %><br />
-        <%= f.email_field :email, autocomplete: "email" %>
-      </div>
+          <div class="field">
+            <%= f.label :email, "メールアドレス", class:"spot-comment" %><br />
+            <%= f.email_field :email, autocomplete: "email", class: "form-address" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :profile, "プロフィール" %><br />
-        <%= f.text_area :profile, placeholder: "(例)自己紹介文" %>
-      </div>
+          <div class="field">
+            <%= f.label :profile, "プロフィール", class:"spot-comment" %><br />
+            <%= f.text_area :profile, placeholder: "(例)自己紹介文", class:"form-comment" %>
+          </div>
 
-      <div class="field">
-        <%= f.label :hobby, "趣味" %><br />
-        <%= f.text_area :hobby, placeholder: "(例)テニス、茶道" %>
-      </div>
+          <div class="field">
+            <%= f.label :hobby, "趣味", class:"spot-comment" %><br />
+            <%= f.text_area :hobby, placeholder: "(例)テニス、茶道", class:"form-comment" %>
+          </div>
 
-      <div class="actions">
-        <%= f.submit "更新する" %>
+          <div class="submit-btn">
+            <%= f.submit "更新する", class:"new_spot_btn" %>
+          </div><br />
+        <% end %>
       </div>
-    <% end %>
+    </div>
   </div>
 </div>
