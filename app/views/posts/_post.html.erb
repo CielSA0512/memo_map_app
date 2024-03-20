@@ -1,11 +1,19 @@
-<div>
-  <div>
-    作成者：<%= post.user.nickname %>
+<div class="album-box">
+  <div class="about-box">
+    <div class="link">
+      <%= link_to post.address, post_path(post.id), class:"link_name btn" %>
+    </div>
+    <div class="album-about">
+      <%= post.comment %>
+    </div>
   </div>
-  <div>
-    <%= link_to post.address, post_path(post.id) %>:
+
+  <% if post.image.present? %>
+    <div class="image-box">
+      <%= image_tag post.image, class: "image" %>
+    </div>
+  <% end %>
+  <div class="user-name">
+    <%= post.user.nickname %>
   </div>
-  <div>
-    コメント：<%= post.comment %>
-  </div><br />
 </div>

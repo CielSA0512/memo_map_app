@@ -1,0 +1,190 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+.btn{
+  text-decoration: none;
+  color: #000000;
+  padding: 0 15px;
+}
+
+.hidden{
+  display: none;
+}
+
+/* メイン */
+
+.main{
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-color: azure;
+}
+
+.container{
+  height: 100%;
+  padding: 20px;
+  margin: 0 40px;
+}
+
+/* お気に入りスポットを記録しよう！ */
+.main-container{
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.top-container{
+  text-align: center;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.new_spot{
+
+}
+
+.new_spot_btn{
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+/* ---posts詳細画面--- */
+
+/* showの土台 */
+.show-container{
+  padding: 50px;
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* about,image,mapを含めた大枠 */
+.show-about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* 作成ユーザー、お気に入りスポット、コメント */
+.about-container{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-box{
+  display: flex;
+  align-items: center;
+}
+
+.font{
+  font-size: 20px;
+}
+
+.user{
+  background-color: floralwhite;
+  border: 1px solid grey;
+  padding: 5px 0;
+}
+
+.spot{
+
+}
+
+.comment{
+
+}
+
+/* about,imageの枠 */
+.left-container{
+  text-align: center;
+  padding: 0 30px;
+  margin: auto 0;
+}
+
+/* image */
+.item-box-img{
+  width: 500px;
+  height: 400px;
+}
+
+.item-img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+img{
+  width: 250px;
+  height: auto;
+}
+
+/* マップの枠 */
+.right-container{
+  padding: 20px;
+}
+
+/* 投稿オプション */
+.option_container{
+  float: right;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 40px;
+}
+
+.edit_option{
+  text-align: center;
+  border: 1px solid white;
+  width: 100px;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+}
+
+.edit_btn{
+  text-decoration: none;
+  color: white;
+}
+
+.delete_option{
+  text-align: center;
+  border: 1px solid white;
+  width: 100px;
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: crimson;
+}
+
+.delete_btn{
+  text-decoration: none;
+  color: white;
+}
+
+/* みんなのお気に入りスポット一覧 */
+.center-container{
+  padding: 16px;
+  text-align: center;
+}
+
+.center-title{
+  padding: 20px;
+}
+
+.center-posts{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center-post{
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 10px;
+}

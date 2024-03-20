@@ -5,30 +5,50 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+
     <header>
-      <div class="header">
-        <div class="">
-          <h1><%= link_to "マップメモアプリ(仮)",root_path %></h1>
+        <div class="header">
+          <div class="header-box">
+            <div class="header-title">
+              <h1><%= link_to "ALBUM with MAP",root_path, class:"title_name_btn" %></h1>
+            </div>
+            <div class="header-sub-menu">
+              <% if user_signed_in? %>
+                <div class="user-menu">
+                  <div class="user_name" id= "login_user">  
+                    <%= current_user.nickname%>▼
+                  </div>
+                </div>
+              <% else %>
+                <div class="user-menu">
+                  <%= link_to "ログイン", new_user_session_path, class:"nav_login btn" %> /
+                  <%= link_to "新規登録", new_user_registration_path, class:"nav_signup btn" %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+          <% if user_signed_in? %>
+            <div class="user_menu_btn hidden", id="option_btn0">
+              <div class="nav", id="option_btn1">
+                <%= link_to "アカウント", user_path(current_user.id), class:"nav_account btn" %>
+              </div>
+              <div class="nav", id="option_btn2">
+                <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class:"nav_logout btn" %>
+              </div>
+            </div>
+          <% end %>
         </div>
-        <% if user_signed_in? %>
-          <div class="">
-            <%= link_to current_user.nickname, user_path(current_user.id) %>/
-            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
-          </div>
-        <% else %>
-          <div class="">
-            <%= link_to "ログイン", new_user_session_path %>/
-            <%= link_to "新規登録", new_user_registration_path %>
-          </div>
-        <% end %>
-      </div>
     </header>
-    <%= yield %>
+        <%= yield %>
+    <footer class="footer">
+      <p class="app-footer">memo_map_app</p>
+    </footer>
+
   </body>
 </html>

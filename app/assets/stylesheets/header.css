@@ -1,5 +1,59 @@
-.header{
+.header-box{
   display: flex;
   justify-content: space-between;
+  background-color: darkgray;
+  padding: 0 20px;
   align-items: center;
+  line-height: 50px;
+  height: 50px;
+}
+
+.header-title{
+  
+}
+
+.title_name_btn{
+  text-decoration: none;
+  color: white;
+}
+
+.header-sub-menu{
+  background-color: beige;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.user-menu{
+
+}
+
+.user_name{
+
+}
+
+.user_menu_btn{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 150px;
+  margin-right: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.nav{
+  padding: 10px 0;
+}
+
+.nav_account{
+
+}
+
+.nav_logout{
+}
+
+.account_name{
+
 }
