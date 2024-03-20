@@ -3,10 +3,10 @@
     <div class="main-container">
 
     <div class="top-container">
-      <div>お気に入りスポットを記録しよう！</div>
+      <h2>お気に入りスポットを記録しよう！</h2>
       <% if user_signed_in? %>
-        <div>
-          <%= link_to "新規投稿", new_post_path, class:"btn" %>
+        <div class="new_spot">
+          <%= link_to "▶新規投稿", new_post_path, class:"new_spot_btn" %>
         </div>
       <% end %>
     </div>

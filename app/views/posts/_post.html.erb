@@ -4,7 +4,6 @@
       <%= link_to post.address, post_path(post.id), class:"link_name btn" %>
     </div>
     <div class="album-about">
-      作成者：<%= post.user.nickname %><br />
       <%= post.comment %>
     </div>
   </div>
@@ -14,4 +13,7 @@
       <%= image_tag post.image, class: "image" %>
     </div>
   <% end %>
+  <div class="user-name">
+    <%= post.user.nickname %>
+  </div>
 </div>
