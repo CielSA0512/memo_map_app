@@ -41,13 +41,16 @@
 
 ## 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/968747ece35b9c10d3f053b461d586ff.png)](https://gyazo.com/968747ece35b9c10d3f053b461d586ff)
+
 投稿ページにて上記のように内容を登録し、「投稿する」を押すと投稿一覧ページに遷移し
 
 [![Image from Gyazo](https://i.gyazo.com/f3f3ba5bc53fdfdd86035acc725d7f3b.png)](https://gyazo.com/f3f3ba5bc53fdfdd86035acc725d7f3b)
+
 投稿一覧機能で投稿したスポットがこのように表示されます。
 スポットをクリックすると投稿詳細ページへ遷移し、
 
 [![Image from Gyazo](https://i.gyazo.com/b87090b731a0b163f6caad568de8de8b.jpg)](https://gyazo.com/b87090b731a0b163f6caad568de8de8b)
+
 投稿詳細ページでは上記のように登録した内容とスポットの位置がグーグルマップで表示されます。
 
 ## 実装予定の機能
