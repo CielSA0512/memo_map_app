@@ -65,6 +65,7 @@ img{
 .map-container{
   height: 700px;
   width: 100%; 
+  margin: 0 auto;
 }
 
 .map{
@@ -110,12 +111,66 @@ img{
 }
 
 
-/* タブレット向けのスタイル(600~1024px) */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .title_name_btn{
-    font-size: 20px;
+/* タブレット向けのスタイル(521~1024px) */
+@media screen and (min-width: 535px) and (max-width: 1024px) {  
+  .show-container{
+    padding: 10px;
   }
-  
+
+  .show-about-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-container{
+    display: flex;
+    width: 100%;
+  }
+
+  .right-container{
+    width: 100%;
+  }
+
+  img{
+    width: 90%;
+    height: 300px;
+  }
+
+  .map-container{
+    margin: 0 auto;
+    height: 380px;
+    width: 95%; 
+  }
+
+  .about-container{
+    margin-bottom: 0px;
+  }
+
+  .about-box{
+    height: 20px;
+  }
+
+  .font{
+    font-size: 13px;
+  }
+
+  .nickname_btn{
+    font-size: 13px;
+    padding: 5px 30px;
+  }
+
+  .spot{
+    font-size: 13px;
+  }
+
+  .comment{
+    font-size: 13px;
+  }
+}
+
+/* スマホ向けのスタイル(598px) */
+@media screen and (min-width:320px) and (max-width: 535px) {
   .show-container{
     padding: 10px;
   }
@@ -132,46 +187,51 @@ img{
 
   img{
     width: 85%;
-    height: 380px;
+    height: 250px;
   }
 
   .map-container{
-    margin: 0 auto;
-    height: 450px;
-    width: 90%; 
+    height: 250px;
+    width: 95%; 
+  }
+
+  .about-container{
+    margin-bottom: 0px;
+  }
+
+  .about-box{
+    height: 20px;
   }
 
   .font{
-    font-size: 18px;
-  }
-}
-
-/* スマホ向けのスタイル(598px) */
-@media screen and (max-width: 599px) {
-  .title_name_btn{
-    font-size: 20px;
-  }
-  
-  .show-container{
-    padding: 10px;
+    font-size: 12px;
   }
 
-  .show-about-container{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  .nickname_btn{
+    font-size: 12px;
+    padding: 5px 30px;
   }
 
-  .left-container, .right-container{
-    width: 100%;
+  .spot{
+    font-size: 12px;
   }
 
-  .map-container{
-    height: 490px;
-    width: 100%; 
+  .comment{
+    font-size: 12px;
   }
 
-  .font{
-    font-size: 18px;
+  /* 投稿オプション */
+  .option_container{
+    justify-content: center;
+    padding: 0;
+  }
+
+  .edit_option{
+    font-size: 15px;
+  }
+
+  .delete_option{
+    padding: 5px 10px;
+    font-size: 15px;
   }
 }

@@ -1,9 +1,9 @@
 .header-box{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: darkgray;
   padding: 0 20px;
-  align-items: center;
   line-height: 50px;
   height: 50px;
 }
@@ -11,6 +11,7 @@
 .title_name_btn{
   text-decoration: none;
   color: white;
+  padding: 10px 20px;
 }
 
 .header-sub-menu{
@@ -19,12 +20,6 @@
   height: 50px;
   text-align: center;
   position: relative;
-}
-
-.user-menu{
-}
-
-.user_name{
 }
 
 .user_menu_btn{
@@ -39,4 +34,33 @@
 
 .nav{
   padding: 10px 0;
+}
+
+/* スマホ向けのスタイル(599px) */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .header-box{
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .title_name_btn{
+    font-size: 15px;
+  }
+  
+  .header-sub-menu{
+    width: 100px;
+  }
+  
+  .user_menu_btn{
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .nav_account{
+    font-size: 10px;
+  }
+
+  .nav_logout{
+    font-size: 10px;
+  }
 }
