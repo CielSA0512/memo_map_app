@@ -15,11 +15,14 @@
 }
 
 .header-sub-menu{
-  background-color: beige;
   width: 200px;
   height: 50px;
   text-align: center;
   position: relative;
+}
+
+.user-menu, .user-menu1{
+  background-color: beige;
 }
 
 .user_menu_btn{
@@ -37,18 +40,23 @@
 }
 
 /* スマホ向けのスタイル(599px) */
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .header-box{
     justify-content: space-between;
     padding: 0;
   }
   
   .title_name_btn{
-    font-size: 15px;
+    font-size: 20px;
   }
-  
-  .header-sub-menu{
+
+  .user-menu{
+    float: right;
     width: 100px;
+  }
+
+  .user-menu1{
+    width: 200px;
   }
   
   .user_menu_btn{
