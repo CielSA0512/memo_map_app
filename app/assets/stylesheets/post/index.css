@@ -1,0 +1,54 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+.btn{
+  text-decoration: none;
+  color: #000000;
+  padding: 0 15px;
+}
+
+.hidden{
+  display: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/* メイン */
+.main{
+  height: calc(100vh - 100px);
+  width: 100vw;
+  background-color: azure;
+}
+
+.container{
+  height: 100%;
+  padding: 20px;
+  margin: 0 40px;
+}
+
+/* お気に入りスポットを記録しよう！ */
+.main-container{
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.top-container{
+  text-align: center;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.new_spot_btn{
+  text-decoration: none;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 0 15px;
+}

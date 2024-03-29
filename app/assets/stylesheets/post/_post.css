@@ -1,3 +1,26 @@
+/* みんなのお気に入りスポット一覧 */
+.center-container{
+  padding: 16px;
+  text-align: center;
+}
+
+.center-title{
+  padding: 20px;
+}
+
+.center-posts{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.center-post{
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 10px;
+}
+
+/* スポットサイズ */
 .album-box{
   position: relative;
   text-align: center;
@@ -9,9 +32,6 @@
 .about-box{
   height: 80px;
   width: 100%;
-}
-
-.link{
 }
 
 .link_name{
@@ -48,4 +68,71 @@
   position: absolute;
   top: 270px;
   right:30px;
+}
+
+/* タブレット向けのスタイル(600~1032px) */
+@media screen and (min-width: 600px) and (max-width: 1032px) {
+  .album-box{
+    height: 290px;
+    width: 190px;
+    padding: 5px;
+  }
+
+  .about-box{
+    height: 80px;
+    width: 100%;
+  }
+
+  .link_name{
+    font-size: 12px;
+  }
+
+  .album-about{
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .image-box{
+    width:180px;
+    height: 190px;
+  }
+
+  .user-name{
+    right:20px;
+    font-size: 12px;
+  }
+}
+
+/* スマホ向けのスタイル(599px) */
+@media screen and (max-width: 599px) {
+  .album-box{
+    height: 280px;
+    width: 170px;
+    padding: 5px;
+  }
+
+  .about-box{
+    height: 76px;
+    width: 100%;
+  }
+
+  .link_name{
+    font-size: 12px;
+  }
+
+  .album-about{
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .image-box{
+    width:160px;
+    height: 180px;
+  }
+
+  .user-name{
+    top: 260px;
+    right:10px;
+    font-size: 12px;
+  }
 }

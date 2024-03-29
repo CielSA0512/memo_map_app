@@ -10,7 +10,7 @@
             <table class="about-container">
               <tr class="about-box">
                 <th class="font">作成したユーザー：</th>
-                <td class="nickname_btn"><%= link_to @post.user.nickname, user_path(@user.id), class:"btn"%>▼</td>
+                <td><%= link_to @post.user.nickname, user_path(@user.id), class:"nickname_btn btn"%></td>
               </tr>
               <tr class="about-box">
                 <th class="font">お気に入りスポット：</th>
@@ -31,7 +31,9 @@
           </div>
 
           <div class="right-container">
-            <%= render partial: "map", locals: { post: @post }  %>
+            <div class="map-container">
+              <%= render partial: "map", locals: { post: @post }  %>
+            </div>
           </div>
 
         </div>

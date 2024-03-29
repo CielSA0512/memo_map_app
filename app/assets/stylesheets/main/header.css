@@ -8,10 +8,6 @@
   height: 50px;
 }
 
-.header-title{
-  
-}
-
 .title_name_btn{
   text-decoration: none;
   color: white;
@@ -43,15 +39,4 @@
 
 .nav{
   padding: 10px 0;
-}
-
-.nav_account{
-
-}
-
-.nav_logout{
-}
-
-.account_name{
-
 }
