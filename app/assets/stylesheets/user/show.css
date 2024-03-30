@@ -18,3 +18,40 @@
   padding: 5px 10px;
   background-color: cornflowerblue;
 }
+
+.center-main-container{
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 535px) and (max-width: 1024px) {
+  .center-main-container{
+    height: 650px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width: 535px) {
+  .account_info{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .account_status{
+    margin: 0 auto;
+  }
+
+  .account{
+    margin-top: 20px;
+  }
+
+  .account_edit{
+    font-size: 15px;
+  }
+
+  .center-main-container{
+    height: 600px;
+  }
+}

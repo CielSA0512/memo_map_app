@@ -2,25 +2,25 @@
   <div class="container">
     <div class="main-container">
 
-    <div class="top-container">
-      <h2 class="sub-title">お気に入りスポットを記録しよう！</h2>
-      <% if user_signed_in? %>
-        <div class="new_spot">
-          <%= link_to "▶新規投稿", new_post_path, class:"new_spot_btn" %>
-        </div>
-      <% end %>
-    </div>
-    
-    <div class="center-container">
-      <div class="center-title">みんなの思い出一覧</div>
-        <div class="center-posts">
-          <% @posts.each do |post| %>
-            <div class="center-post">
-              <%= render partial: "posts/post", locals: { post: post } %>
-            </div>
-          <% end %>
-        </div>
-    </div>
+      <div class="top-container">
+        <h2 class="sub-title">お気に入りスポットを記録しよう！</h2>
+        <% if user_signed_in? %>
+          <div class="new_spot">
+            <%= link_to "▶新規投稿", new_post_path, class:"new_spot_btn" %>
+          </div>
+        <% end %>
+      </div>
+      
+      <div class="center-container">
+        <div class="center-title">みんなの思い出一覧</div>
+          <div class="center-posts">
+            <% @posts.each do |post| %>
+              <div class="center-post">
+                <%= render partial: "posts/post", locals: { post: post } %>
+              </div>
+            <% end %>
+          </div>
+      </div>
 
     </div>
   </div>

@@ -1,9 +1,8 @@
 <div class="main">
   <div class="container">
-    <h2><%= @user.nickname %></h2>
+    <h2>アカウント詳細</h2>
     <div class="account_info">
-      <div>
-        <table>
+        <table class="account_status">
           <tr>
             <th class="">名前：</th>
             <td class=""><%= @user.nickname %></td>
@@ -17,7 +16,6 @@
             <td class=""><%= @user.hobby %></td>
           </tr>
         </table>
-      </div>
       <% if user_signed_in? && current_user.id == @user.id %>
         <div class="account">
           <%= link_to "アカウント編集", edit_user_path(@user.id), class:"account_edit btn" %>
@@ -26,8 +24,8 @@
     </div>
 
     <div class="center-container">
-      <div class="main-container">
-        <div class="center-title"><%= @user.nickname %>さんのお気に入りスポット一覧</div>
+      <div class="center-main-container">
+        <div class="center-title"><%= @user.nickname %>さんのスポット記録一覧</div>
           <div class="center-posts">
             <% @posts.each do |post| %>
               <div class="center-post">
