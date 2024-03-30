@@ -1,0 +1,178 @@
+.new-container{
+  text-align: center;
+  height: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  overflow: scroll;
+  background-color: white;
+}
+
+.new-form-container{
+  width: 75%;
+  border: 1px solid #000000;
+  margin: 0 auto;
+  background-color: ghostwhite;
+  padding: 0 20px;
+}
+
+/* 新規スポット投稿 */
+.new-form-title{
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  background-color: lemonchiffon;
+}
+
+/* 投稿ボタン */
+.submit{
+  padding: 5px 30px;
+  margin: 10px 0;
+}
+
+/* スポット名 */
+.address-name{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-address{
+  height: 30px;
+  width: 80%;
+  margin: 20px 0;
+}
+
+/* コメント */
+.spot-comment{
+  font-size: 20px;
+}
+
+.form-comment{
+  height: 100px;
+  width: 80%;
+  margin: 20px 0;
+}
+
+/* 思い出の画像 */
+.form-image-box{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.image-label{
+  font-size: 20px;
+}
+
+.file-image-form{
+  padding: 20px;
+}
+
+.file-image{
+  width: 300px;
+}
+
+.preview-image{
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* エラー表示 */
+.error-messages{
+  height: 50px;
+  padding-right: 30px;
+}
+
+.error-message{
+  margin: 0 auto;
+}
+
+/* タブレット向けのスタイル(521~1024px) */
+@media screen and (min-width: 535px) and (max-width: 1024px) {
+  .new-form-container{
+    width: 80%;
+  }
+  
+  /* 新規スポット投稿 */
+  .new_spot_btn{
+    font-size: 20px;
+  }
+
+  /* スポット名 */
+  .address-name{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  /* コメント */
+  .spot-comment{
+    font-size: 20px;
+  }
+
+  /* 思い出の画像 */
+  .image-label{
+    font-size: 20px;
+  }
+
+  .file-image{
+    width: 350px;
+    font-size: 18px;
+  }
+
+  .error-message{
+    font-size: 18px;
+  }
+
+  .preview-image{
+    width: auto;
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+/* スマホ向けのスタイル */
+@media screen and (min-width:320px) and (max-width: 535px) {
+  .new-form-container{
+    width: 100%;
+  }
+  
+  /* 新規スポット投稿 */
+  .new-form-title{
+    font-size: 25px;
+  }
+
+  .new_spot_btn{
+    font-size: 15px;
+  }
+
+  /* スポット名 */
+  .address-name{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  /* コメント */
+  .spot-comment{
+    font-size: 15px;
+  }
+
+  /* 思い出の画像 */
+  .image-label{
+    font-size: 15px;
+  }
+
+  .file-image{
+    width: 200px;
+    font-size: 11px;
+  }
+
+  .error-message{
+    font-size: 12px;
+  }
+
+  .preview-image{
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+  }
+}
