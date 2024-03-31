@@ -72,8 +72,8 @@
 }
 
 .preview-image{
-  width: auto;
-  height: 300px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -122,12 +122,6 @@
   .error-message{
     font-size: 18px;
   }
-
-  .preview-image{
-    width: auto;
-    height: 240px;
-    object-fit: cover;
-  }
 }
 
 /* スマホ向けのスタイル */
@@ -168,11 +162,5 @@
 
   .error-message{
     font-size: 12px;
-  }
-
-  .preview-image{
-    width: auto;
-    height: 200px;
-    object-fit: cover;
   }
 }
