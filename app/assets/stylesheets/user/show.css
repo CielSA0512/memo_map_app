@@ -32,6 +32,7 @@
 
   .account_edit{
     font-size: 14px;
+    margin: 0;
   }
 }
 
@@ -56,5 +57,12 @@
 
   .account_edit{
     font-size: 15px;
+    margin: 0;
+  }
+
+  .account_status th, .account_status td {
+    display: block;
+    width: 100%;
+    height: 20px;
   }
 }

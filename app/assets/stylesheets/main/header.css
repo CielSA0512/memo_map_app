@@ -39,6 +39,15 @@
   padding: 10px 0;
 }
 
+.logout_btn{
+  background-color: red;
+}
+
+.nav_logout{
+  color: white;
+  text-decoration: none;
+}
+
 /* スマホ向けのスタイル(599px) */
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .header-box{

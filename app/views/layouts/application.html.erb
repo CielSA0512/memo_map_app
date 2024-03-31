@@ -36,10 +36,10 @@
           <% if user_signed_in? %>
             <div class="user_menu_btn hidden", id="option_btn0">
               <div class="nav", id="option_btn1">
-                <%= link_to "アカウント", user_path(current_user.id), class:"nav_account btn" %>
+                <%= link_to "ユーザー詳細", user_path(current_user.id), class:"nav_account btn" %>
               </div>
-              <div class="nav", id="option_btn2">
-                <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class:"nav_logout btn" %>
+              <div class="nav logout_btn", id="option_btn2">
+                <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class:"nav_logout" %>
               </div>
             </div>
           <% end %>
