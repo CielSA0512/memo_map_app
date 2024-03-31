@@ -1,3 +1,9 @@
+.account-container{
+  padding: 0 20px;
+  margin: 0 10px;
+  border-bottom: 1px solid black;
+}
+
 .account_info{
   display: flex;
   align-items: center;
@@ -19,20 +25,21 @@
   background-color: cornflowerblue;
 }
 
-.center-main-container{
-  height: 100%;
-  background-color: white;
-  border: 1px solid black;
-  overflow: scroll;
-}
-
 @media screen and (min-width: 535px) and (max-width: 1024px) {
   .center-main-container{
     height: 650px;
   }
+
+  .account_edit{
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width:320px) and (max-width: 535px) {
+  .account-container{
+    padding: 0 10px;
+  }
+  
   .account_info{
     display: block;
     margin-bottom: 30px;
@@ -49,9 +56,5 @@
 
   .account_edit{
     font-size: 15px;
-  }
-
-  .center-main-container{
-    height: 600px;
   }
 }
