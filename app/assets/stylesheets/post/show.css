@@ -84,30 +84,28 @@ img{
 .edit_option{
   text-align: center;
   border: 1px solid white;
-  width: 100px;
   font-size: 20px;
   margin-right: 20px;
-  padding: 5px 10px;
-  background-color: cornflowerblue;
 }
 
 .edit_btn{
   text-decoration: none;
   color: white;
+  padding: 0 20px;
+  background-color: cornflowerblue;
 }
 
 .delete_option{
   text-align: center;
   border: 1px solid white;
-  width: 100px;
-  padding: 5px 10px;
   font-size: 20px;
-  background-color: crimson;
 }
 
 .delete_btn{
   text-decoration: none;
   color: white;
+  padding: 0 20px;
+  background-color: crimson;
 }
 
 
